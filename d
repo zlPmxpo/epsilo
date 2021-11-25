@@ -1,25 +1,3 @@
-local keys = {
-   ["PuR-CKJK--44-KgceCNO-2-4s2KrCevv"] = true,
-   ["--v4s4-v2-OcgJvKZNCJg-eqeCN4uOsN"] = true,
-   ["KNq4eeCeeCvv4uNJRC-uJ4KrPJJgOr-N"] = true,
-   ["sPNscNO-N-v472OusOcJcJugRdCd27cO"] = true,
-   ["vJevdK-Jru27ZOO--CJ--dZ4Pr-NKCe-"] = true,
-   ["K7e4ggcJe4OvNgNcd2KK7K-NvceKCvdC"] = true,
-   ["OK-2KNu-d4CeeN4cvPN-Ne2R-4dqgrqv"] = true,
-   ["74e4ZNN2COP-NNuZeu-rNqCvPCvu-euq"] = true,
-   ["2d-euveJZevuCuZ-ON-NPNrKOOdR4rNN"] = true,
-   ["-KOOvN-qvK7JusJNCer4Cd-KeONv-2-Z"] = true,
-   ["NqOOv4NKPZv--ZKe2cOJqe-4R-NCN7vv"] = true,
-   ["u-s--KNq-OguRv-4PZ-C-edseK-JC4O4"] = true,
-   ["O-OeK4KvRc-J-4Csq-2gKJc-JZ2-4-Zv"] = true,
-   ["Cds--uNvv-eJ2vr4-NKeOZqCKNKdNqKv"] = true,
-   ["JZJvvNRuZvuJZeP-NNr-COeduuNrr-vN"] = true,
-   ["rZeZ-uKKNZNeK-OCN-vKev4CZZJduu-2"] = true,
-   ["RNNeONZrrJd-O-eZr-2u2N-CONPdONve"] = true,
-   ["uNdNu-eN4ueueNeKvNZddZPJdO2rOZOd"] = true,
-   ["4r--4N4CuNveNN4OdZuu-ZNe-NJZOPNN"] = true,
-}
-if keys[shared.key] then
 local Config = {
     WindowName = "michaelhook_",
 	Color = Color3.fromRGB(0,102,204),
@@ -504,6 +482,3 @@ Toggle3:CreateKeybind(tostring(Config.Keybind):gsub("Enum.KeyCode.", ""), functi
 	Config.Keybind = Enum.KeyCode[Key]
 end)
 Toggle3:SetState(true)
-else
-game:GetService("StarterGui"):SetCore("SendNotification", {Title = "MICHAELHOOK"; Text = "KEY Error, re-check."; Duration = 9e9; Button1 = "ok"})
-end
