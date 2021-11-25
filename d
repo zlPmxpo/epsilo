@@ -1,3 +1,5 @@
+if
+    game.PlaceId == 3328347965 then
 local Config = {
     WindowName = "michaelhook_",
 	Color = Color3.fromRGB(0,102,204),
@@ -482,3 +484,4 @@ Toggle3:CreateKeybind(tostring(Config.Keybind):gsub("Enum.KeyCode.", ""), functi
 	Config.Keybind = Enum.KeyCode[Key]
 end)
 Toggle3:SetState(true)
+end
